@@ -37,16 +37,13 @@ results
 
 #Open the file in python to read it.
 #My original method.
-
 #file = open('puzzle_instructions\\extracted_content\\Instructions.txt', 'r')
-
 #for line in file:
 #    line = line.rstrip('\n')
 #    print(line)
 
 
-#Method for search through text to find the pattern.  Based on Jose's code.
-
+#Jose's function for search for the desired pattern in a string of text
 #def search (file, pattern = r'\d{3}-\d{3}-\d{4}'):
 #    f = open(file,'r')
 #    text = f.read()
@@ -58,7 +55,6 @@ results
 
 #Jose's method for searching through the files.
 #results = []
-
 #for folder, sub_folders, files in os.walk(os.getcwd()+'\\extracted_content'):
 #    for f in files:
 #        full_path = folder + '\\' + f
