@@ -6,15 +6,24 @@
 
 while True:
     try:
-        num = int(input("Please enter an integer."))
-        break
+        num = int(input("Please enter a positive integer."))
+        
+        if num >= 0:
+            break
+        else:
+            print("Please enter a positive integer.")
+            continue
 
     except ValueError:
         print("You did not enter an integer.  Please try again.")
 
-result = num
+if num == 0:
+    print("Your answer is:",1)
 
-for x in range(1,num):
-    result *= x
+else:
+    result = num
 
-print(result)
+    for x in range(1,num):
+        result *= x
+
+    print("Your answer is:",result)
